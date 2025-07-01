@@ -22,6 +22,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 Launches the test runner in interactive watch mode.
 
+## API Configuration
+
+* By default, this frontend app expects the backend FastAPI API to be running at `http://localhost:3001`.
+* To connect to a different backend (e.g. a cloud URL), set the `REACT_APP_BACKEND_URL` environment variable **before** running `npm start` or `npm run build`.
+* The backend must implement at least: `/upload` (POST, PDF upload), `/books` (GET, book list), `/ask` (POST, ask question), `/status` (GET, status).
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
